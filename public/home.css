@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sofadi+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  margin: 20px 0;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.list1,
+.list2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.f-list .list1 a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.m {
+  padding: 5px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.container img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.621);
+  top: 90px;
+  height: 109%;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  z-index: 15;
+  color: white;
+  font-size: 32px;
+  bottom: 300px;
+  right: 460px;
+}
+
+#smart {
+  font-size: 60px;
+  font-family: "Permanent Marker", cursive;
+}
+
+#slogan {
+  font-family: "Sofadi One", system-ui;
+}
+
+.f-list .list2 a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+#login {
+  height: 35px;
+  width: 80px;
+  background-color: #00bfa5;
+  padding-left: 15px;
+  border: 2px solid #00bfa5;
+  border-radius: 8px;
+}
+
+#login:hover {
+  color: #00bfa5;
+  border: 2px solid #00bfa5;
+  background-color: white;
+}
+
+#signup {
+  height: 35px;
+  width: 80px;
+  background-color: #f9fbfa;
+  padding-left: 8px;
+  border: 2px solid #00bfa5;
+  border-radius: 8px;
+}
+
+.list2 li a:hover {
+  color: #00bfa5;
+}
+
+.footer-component {
+  background-color: #1e1e26;
+  color: #fff;
+  padding: 10px 80px;
+}
+
+.dark-side {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  gap: 54px;
+}
+
+.col {
+  width: 30%;
+}
+
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.link,
+.address {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.link a,
+.terms a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.link:hover a,
+.terms a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  margin-right: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.light-side {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+.terms {
+  text-align: right;
+}
+.footerLink {
+  color: white;
+  text-decoration: none;
+}
+/* .light-side{
+    background-color: #22bbb0;
+    
+  } */
+.email {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: -8px;
+  left: 5px;
+}
+
+section {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container-2 {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.header-2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.table td {
+  font-size: 16px;
+  color: #333;
+}
+
+.table .active {
+  background-color: #e0f7fa;
+  border-bottom: 2px solid #00acc1;
+}
+
+.table .active th {
+  color: #00acc1;
+}
+
+.table .time {
+  text-align: right;
+  color: #666;
+}
+
+/* Add some basic styling to make the table look better */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  /* Add some space between tables */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+
+.container-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.heading-3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+.heading-accent {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0cb8b6;
+}
+.testimonial {
+    max-width: 512px;
+}
+.quote {
+    display: flex;
+    align-items: start;
+}
+.quote-icon {
+    color: #0cb8b6;
+    font-size: 2.5rem;
+}
+.quote-text {
+    margin-left: 1rem;
+    font-size: 1.125rem;
+    color: #4a5568;
+}
+.quote-text .bold {
+    font-weight: bold;
+}
+.author {
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: black;
+    position: relative;
+    left: 57px;
+    margin-top: 1rem;
+}
+.location {
+    color: #4a5568;
+    position: relative;
+    left: 57px;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="home2.css"> -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </link>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/logo.jpg" alt="" width="80px">
+            <h3>Smart Go</h3>
+        </div>
+        <div class="f-list">
+            <div class="list1">
+                <li><img src="home.svg" alt=""><a class="m" href="#home">Home</a></li>
+                <li><img src="help.svg" alt=""><a class="m" href="/help">Help</a></li>
+                <li><img src="account.svg" alt=""><a style="padding-right: 20px;" href="">Accounts</a></li>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <div id="home" class="container">
+            <img src="/bg4.jpg" alt="">
+            <div class="screen"></div>
+
+        </div>
+        <div class="content">
+            <p id="smart">SMART GO</p>
+            <p id="slogan">Make your trip easier with Smart Go</p>
+        </div>
+
+    </main>
+
+    <div style="height: auto; margin: 250px ;">
+        <h1 style="color: black; font-size: 24px;">What are you looking for?</h1>
+        <form style="display: flex;">
+            <label for="from">From:</label>
+            <input style="display: flex;
+            align-items: center;
+            margin-right: 20px;" type="text" id="from" name="from">
+            <label for="to">To:</label>
+            <input style="display: flex;
+            align-items: center;
+            margin-right: 20px;" type="text" id="to" name="to">
+            <button style="border: 2px solid aqua; 
+            padding: 5px;
+            background-color: aqua;
+            color: white;" type="submit">Search Buses</button>
+        </form>
+        <div id="bus-list">
+            <!-- Bus list will be displayed here -->
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container-2">
+            <div class="header-2">Bus Stops</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th id="pickupPoint" onclick="showPickupPoint()">Pickup Point</th>
+                        <th id="droppingPoint" class="active" onclick="showDroppingPoint()">Dropping Point</th>
+                        <th class="time">Time</th>
+                    </tr>
+                </thead>
+                <tbody id="pickupBody" style="display: none;">
+                    <tr>
+                        <td>
+                            <div>C.P</div>
+                            <div style="font-size: 14px; color: #999;">Near Parliament, Delhi...</div>
+                        </td>
+                        <td></td>
+                        <td class="time">12:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>India Gate, Delhi</div>
+                            <div style="font-size: 14px; color: #999;">Hauz Khas, Delhi...</div>
+                        </td>
+                        <td></td>
+                        <td class="time">12:50 PM</td>
+                    </tr>
+                </tbody>
+                <tbody id="droppingBody">
+                    <tr>
+                        <td>
+                            <div>Station,  Delhi</div>
+                            <div style="font-size: 14px; color: #999;">Near Kush Hotel Delhi</div>
+                        </td>
+                        <td></td>
+                        <td class="time">01:10 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>ISBT Dehradun Complex</div>
+                            <div style="font-size: 14px; color: #999;">Delhi Platform, ISBT Dehradun ...</div>
+                        </td>
+                        <td></td>
+                        <td class="time">01:30 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div class="container-3">
+        <div>
+            <h1 class="heading-3">Compliments of</h1>
+            <h1 class="heading-accent">Smart Go Service</h1>
+        </div>
+        <div class="testimonial">
+            <div class="quote">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote-text">
+                    I recently traveled with Smart Go Bus Service, and it was an <span class="bold">absolute
+                        delight!</span> From the moment I boarded until the end of the journey, everything was flawless.
+                    The buses were comfortable, the staff was friendly, and the trip was smooth. Highly recommended!
+                </p>
+            </div>
+            <div>
+                <p class="author">Nupur Shah</p>
+                <p class="location">Delhi</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<footer>
+    <div class="footer-component overflow-hidden">
+        <div class="dark-side d-flex justify-content-between">
+            <div class="row flex-nowrap" style="column-gap: 54px;">
+                <div class="col-4 p-0">
+                    <h2 class="ubuntu-700w-18s-22h white-color whitespace-nowrap">Smart GO</h2>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer">
+                        Sign In / Sign Up</p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer  ">
+                        <a class="footerLink" href="/all-routes">Smart Go Routes</a>
+                    </p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer  ">
+                        <a class="footerLink" href="/offers">Offers</a>
+                    </p>
+
+
+                </div>
+                <div class="col-4 p-0">
+                    <h2 class="ubuntu-700w-18s-22h white-color whitespace-nowrap">More on Smart GO
+                    </h2>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer ">
+                        <a class="footerLink" href="/about-us">About Us</a>
+                    </p>
+
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer ">
+                        <a class="footerLink" href="/news">Newsroom</a>
+                    </p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer ">
+                        <a class="footerLink" href="/environment">Environment</a>
+                    </p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer ">
+                        <a class="footerLink" href="/magazine">Magazine</a>
+                    </p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer ">
+                        <a class="footerLink" href="/blog">Blog</a>
+                    </p>
+                </div>
+                <div class="col-4 p-0">
+                    <h2 class="ubuntu-700w-18s-22h white-color whitespace-nowrap">Help Center</h2>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer">
+                        <a class="footerLink" href="/call">Support</a>
+                    </p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer">
+                        <a class="footerLink" href="/faq">FAQs</a>
+                    </p>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer">
+                        <a class="footerLink" href="/sitemap">Sitemap</a>
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="mr-5">
+                    <h2 class="ubuntu-700w-18s-22h white-color whitespace-nowrap">Write to Us</h2>
+                    <p class="open-400w-16s-22h white-color whitespace-nowrap opacity-80 cursor-pointer">
+                        Smart Go Office<br>Unit-405, E-Wing,<br>Corporate
+                        Avenue<br>Chakala, Near India Gate <br>Delhi- 400093</p>
+                    <div class="d-flex align-items-center "><img alt="alt" src="mail.svg" class="icon-24 mr-2"><a
+                            href="mailto: support@smartgo.in"
+                            class=" open-400w-16s-24h white-color mb-0 cursor-pointer email">support@smartgo.in</a>
+                    </div>
+                </div>
+                <div class="pl-2">
+                    <p class="ubuntu-700w-18s-22h white-color whitespace-nowrap">Follow Us On</p>
+                    <div class="d-flex mb-5"><a href="https://twitter.com/smartgo" rel="nofollow" target="_blank"><img
+                                alt="alt" src="twitter.svg" class="icon-24 cursor-pointer"></a><a
+                            href="https://www.facebook.com/smartgo" target="_blank" rel="nofollow"><img alt="alt"
+                                src="fb.svg" class="icon-24 cursor-pointer mx-2"></a><a
+                            href="https://www.linkedin.com/company/smartgo/" target="_blank" rel="nofollow"><img
+                                alt="alt" src="linkedin.svg" class="icon-24 cursor-pointer"></a><a
+                            href="https://www.instagram.com/smartgo/" target="_blank" rel="nofollow">
+                            <img alt="alt" src="insta.svg" class="icon-24 cursor-pointer ml-2"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-side row">
+            <div class="col-6">
+                <p class="open-600w-16s-24h white-color mb-0 ">© Smart Go 2022-24</p>
+            </div>
+            <div class="col-6 d-flex justify-content-end  ">
+                <p class="open-400w-16s-24h white-color mb-0 mr-3 cursor-pointer">Terms &amp; Conditions
+                </p>
+                <p class="open-400w-16s-24h white-color mb-0 cursor-pointer"><a class="footerLink"
+                        href="/privacy-policy">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    function showPickupPoint() {
+        document.getElementById('pickupBody').style.display = '';
+        document.getElementById('droppingBody').style.display = 'none';
+        document.getElementById('pickupPoint').classList.add('active');
+        document.getElementById('droppingPoint').classList.remove('active');
+    }
+
+    function showDroppingPoint() {
+        document.getElementById('pickupBody').style.display = 'none';
+        document.getElementById('droppingBody').style.display = '';
+        document.getElementById('pickupPoint').classList.remove('active');
+        document.getElementById('droppingPoint').classList.add('active');
+    }
+</script>
+
+<script src="search.js"></script>
+</body>
+
+</html>

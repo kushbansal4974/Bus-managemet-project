@@ -1,0 +1,24 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.20.0",
+    "mongoose": "^8.6.1",
+    "nodemon": "^3.1.4",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
